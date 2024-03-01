@@ -60,4 +60,15 @@ const greetPerson = ["Hoşgeldiniz","Keyifli","Alışverişler","Dileriz."];
 const mergedText = greetPerson.reduce((value,argüman) => value + " " + argüman);
 console.log(mergedText);
 
+const items = ['elma', 'armut', 'kiraz', 'elma', 'üzüm', 'armut', 'elma'];
+const itemCounts = items.reduce((obj,param) => {
+    if(obj[param]) {
+        obj[param] =0;
+    }
+    obj[param]++;
+    return obj;
+}, {});
+console.log("Tekrar eden elemanlar" ,itemCounts);
+
+
 
