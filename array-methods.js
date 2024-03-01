@@ -49,3 +49,15 @@ console.log(nums);
 const sayilar = [9,8,7,6,5,4];
 const toplam = sayilar.reduce((accumulator,value) => accumulator + value);
 console.log(toplam);
+
+const nums1 =[100,20,70,2];
+const maxNums = nums1.reduce((max,element) => max > element ? max :element);
+const minNums = nums1.reduce((min,element) => min < element ? min:element);
+console.log(maxNums);
+console.log(minNums);
+
+const greetPerson = ["Hoşgeldiniz","Keyifli","Alışverişler","Dileriz."];
+const mergedText = greetPerson.reduce((value,argüman) => value + " " + argüman);
+console.log(mergedText);
+
+
