@@ -45,6 +45,14 @@ const nums = [7,15,14,10,12,9,6];
 nums.sort();
 console.log(nums);
 
+const weatherData = [
+    { city :"İstanbul", temperature: 14 },
+    { city :"İzmir", temperature: 18 },
+    { city :"Ankara", temperature: 10 }
+];
+weatherData.sort((city1,city2) => city2.temperature - city1.temperature);
+console.log("Günlük Sıcaklıklar" ,weatherData);
+
 // reduce
 const sayilar = [9,8,7,6,5,4];
 const toplam = sayilar.reduce((accumulator,value) => accumulator + value);
