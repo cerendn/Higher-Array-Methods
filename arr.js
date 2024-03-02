@@ -172,3 +172,12 @@ const activeStudents = students.reduce((acc,currentStudent) => {
     return acc;
 },[])
 console.log(activeStudents);
+
+const nums =[3,9,7,6,8,10,20,23,89,97]
+const hasEvenNum = nums.filter(num => num % 2 === 0);
+console.log(hasEvenNum);
+const newNums = hasEvenNum.map(num => num * 5);
+console.log(newNums);
+
+const totalNums = newNums.reduce((acc,num) => acc + num);
+console.log(totalNums);
